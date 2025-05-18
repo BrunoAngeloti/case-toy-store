@@ -47,17 +47,6 @@ Um sistema completo para gerenciar **clientes e vendas** de uma loja de brinqued
 
 ---
 
-## 📁 Estrutura do Projeto
-
-src/
-├── components/ → Componentes reutilizáveis
-├── lib/ → Cliente Supabase e configs
-├── pages/ → Páginas Next.js
-├── tests/ → Testes com Jest
-├── utils/ → Funções auxiliares
-
----
-
 ## 🧪 Testes
 
 Framework: **Jest + Testing Library**
