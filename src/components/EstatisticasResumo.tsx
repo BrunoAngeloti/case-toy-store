@@ -1,3 +1,5 @@
+import { MdStars } from "react-icons/md";
+
 type Props = {
   stats: any;
 };
@@ -5,7 +7,10 @@ type Props = {
 export default function EstatisticasResumo({ stats }: Props) {
   return (
     <div className="mt-12">
-      <h2 className="text-2xl font-semibold mb-6 text-gray-800">📊 Destaques</h2>
+      <h2 className="text-2xl font-semibold mb-6 text-gray-800">
+        <MdStars className="inline-block mr-2 text-yellow-500" />
+         Destaques
+      </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {[
           { title: 'Maior volume de vendas', info: stats.maior_volume },
@@ -19,6 +24,5 @@ export default function EstatisticasResumo({ stats }: Props) {
         ))}
       </div>
     </div>
-
   );
 }
