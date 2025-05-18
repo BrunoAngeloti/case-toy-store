@@ -3,8 +3,11 @@ import { supabase } from '../lib/supabaseClient';
 import VendasChart from '../components/VendasChart';
 import EstatisticasResumo from '../components/EstatisticasResumo';
 import { Title } from '@/components/Title';
+import { useAuthGuard } from '@/hooks/useAuthGuard';
 
 export default function DashboardPage() {
+  useAuthGuard();
+
   const [salesData, setSalesData] = useState<any[]>([]);
   const [stats, setStats] = useState<any>(null);
 

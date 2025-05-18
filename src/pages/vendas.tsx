@@ -7,8 +7,11 @@ import VendaForm from '@/components/VendaForm';
 import type { Venda, Cliente } from '@/types';
 import UltimasVendas from '@/components/UltimasVendas';
 import { Title } from '@/components/Title';
+import { useAuthGuard } from '@/hooks/useAuthGuard';
 
 export default function VendasPage() {
+  useAuthGuard();
+
   const [vendas, setVendas] = useState<Venda[]>([]);
   const [clientes, setClientes] = useState<Cliente[]>([]);
   const [clienteId, setClienteId] = useState('');

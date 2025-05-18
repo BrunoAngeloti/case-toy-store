@@ -5,8 +5,11 @@ import ClienteCard from '../components/ClienteCard';
 import { Title } from '@/components/Title';
 import { toast } from 'react-toastify';
 import { getLetraFaltante } from '@/utils/getLetraFaltante';
+import { useAuthGuard } from '@/hooks/useAuthGuard';
 
 export default function ClientesPage() {
+  useAuthGuard();
+
   const [clientes, setClientes] = useState<any[]>([]);
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
