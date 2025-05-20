@@ -1,5 +1,7 @@
 # 🧸 Toy Store CRM
 
+👉 **[Clique aqui para ver todos os comandos SQL usados no Supabase](./src/README.md)**
+
 Um sistema completo para gerenciar **clientes e vendas** de uma loja de brinquedos. Conta com autenticação, dashboard analítico, interface responsiva e uma experiência minimalista.
 
 ---
